@@ -1,0 +1,108 @@
+.wrap{
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header,section,footer{
+    width: 100%;
+    float: left;
+    /* background-color: sandybrown; */
+}
+
+.in_header,.container,.in_footer{
+    width: 1400px;
+    margin: 0 auto;
+    /* background-color: salmon; */
+}
+
+input{
+    display: none;
+}
+
+body{
+    font-size: 16px;
+}
+
+@media (max-width:1400px) and (min-width:760px){
+
+    .in_header,.container,.in_footer{
+        width: 90%;
+    }
+
+    .container_2{
+        /* margin: 150px 0; */
+        overflow: hidden;
+    }
+    
+    /* .left_wrap{
+        width: 90%;
+        background-color: aquamarine;
+        float: left;
+        margin-top: 100px;
+    } */
+
+    /* .left_wrap{
+        width: 90%;
+        background-color: saddlebrown;
+        float: left;
+    } */
+}
+/* container end */
+
+@media (max-width:759px){
+
+    .left_wrap{
+        width: 95%;
+        /* background-color: saddlebrown; */
+        /* margin-top: 180px; */
+        float: left;
+    }
+    .right_wrap .img_box{
+        width: 90%;
+        
+    }
+    body{
+        font-size: 13px;
+    }
+    .title_wrap_1 h3{
+        line-height: 30px;
+    }
+
+    .section_1 video{
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .in_header,.container,.in_footer{
+        width: 95%;
+    }
+    .container_2 .right_wrap{
+        float: left;
+        margin-top: 50px;
+    }
+
+    .container_4 .con_wrap_4{
+        display: block;
+    }
+    .container .con_wrap_4 li{
+        width: 100%;
+        margin-bottom: 50px;
+    
+    }
+    .section_3{
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/solar-system-5680167_1920.jpg);
+        background-attachment: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        
+    }
+
+}
+/* container end */

@@ -1,0 +1,331 @@
+
+
+header{
+    height: 80px;
+    /* background-color: seagreen; */
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 98;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header a{
+    color: white;
+}
+
+.in_header{
+    height: 100%;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 900;
+    color: white;
+    float: left;
+    margin-top: 25px;
+}
+
+.menu_btn{
+    width: 30px;
+    height: 25px;
+    float: right;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+}
+
+.menu_btn span{
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    display: block;
+    
+}
+
+.menu_wrap{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0; right: -100%;
+    transition-duration: 0.5s;
+}
+
+.menu_wrap li{
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 130px;
+}
+
+#menu_input:checked~.menu_wrap{
+    right: 0;
+}
+/* header end */
+
+.section_1{
+    height: 100vh;
+    position: relative;
+}
+
+.section_1 video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    /* transform: rotateY(180deg); */
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.container_1{
+    position: relative;
+}
+
+.title_wrap_1{
+    /* background-color: saddlebrown; */
+    position: absolute;
+    top: 250px; left: 0;
+    color: #fff;
+}
+
+.title_wrap_1 h1{
+    font-size: 2em;
+    line-height: 40px;
+    font-weight: 900;
+}
+
+.title_wrap_1 p{
+    font-size: 1em;
+    font-weight: 100px;
+    margin-top: 15px;
+    line-height:26px;
+}
+
+.container_2{
+    margin: 150px 0;
+    overflow: hidden;
+}
+
+
+.left_wrap{
+    width: 500px;
+    /* background-color: saddlebrown; */
+    margin-top: 180px;
+    float: left;
+}
+
+.left_wrap input{
+    display: none;
+}
+
+.tab_wrap{
+    width: 100%;
+    /* background-color: beige; */
+    overflow: hidden;
+    /* =>자식 구조 복잡함에 따라 부모의 높이 값이 상실될 때
+    넣어주면 높이값이 재생성이 됨
+    =>단, 포지션이 들어간 자식은 잡을 수가 없음 */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.tab_wrap label{
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    display: block;
+}
+
+
+.con_wrap_2{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.con_wrap_2 .con_2{
+    display: none;
+
+}
+
+
+.con_2 h3{
+font-size: 30px;
+font-weight: 900;
+}
+
+.con_2 p{
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 15px;
+}
+
+.con_2 h3{
+    font-size: 25px;
+    font-weight: 800;
+    color:black;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.con_2 p{
+    font-size: 15px;
+    color: black;
+    font-weight: 200;
+    line-height: 20px;
+}
+
+.con_wrap_2 .con_2{
+    display: none;
+}
+
+/* .tab_menu_1{
+    width: 110px;
+    height: 36px;
+    background-color:rgba(0, 0, 0, 0);
+} */
+
+#tab_1:checked~.tab_wrap .tab_menu_1{
+    background-color:darkgray;
+}
+
+#tab_1:checked~.con_wrap_2 :nth-child(1){
+    display: block;
+}
+
+#tab_2:checked~.tab_wrap .tab_menu_2{
+    background-color:darkgray;
+}
+
+#tab_2:checked~.con_wrap_2 :nth-child(2){
+    display: block;
+}
+
+#tab_3:checked~.tab_wrap .tab_menu_3{
+    background-color:darkgray;
+}
+
+#tab_3:checked~.con_wrap_2 :nth-child(3){
+    display: block;
+}
+
+
+.right_wrap .img_box{
+    width: 800px;
+    height: 370px;
+    background-image: url(../img/a-total-solar-eclipse-1113799_1920.jpg);
+    float: right;
+    margin-top: 100px;
+    
+    background-repeat: no-repeat;
+}
+
+.section_3{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/solar-system-5680167_1920.jpg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.container_4{
+    margin: 150px auto;
+    
+}
+
+.title_wrap_4{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    
+}
+
+.section_4 a{
+    color: black;
+}
+.con_wrap_4{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+/* .con_wrap_4 .box1{
+    width: 447px;
+    height: 100vh;
+} */
+
+.con_wrap_4 li{
+    width: calc(446.66666 / 1400 * 100%);
+    overflow: hidden;
+    /* background-color: salmon; */
+}
+
+.con_wrap_4 .box1{
+    width: 100%;
+    height: 85%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.con_wrap_4 img{
+    width: 100%;
+    height: 100%;
+    /* margin-bottom: 30px; */
+    transition: 0.5s;
+}
+
+.con_wrap_4 h4{
+    font-size: 18px;
+    font-weight: 600;
+    /* color: salmon; */
+    padding-top: 15px;
+    border-top: 1px solid #dbdbdb;
+}
+
+/* 컨텐츠에 마우스를 올리면 이미지가 스케일이 1.1배 0.5초간 확대 */
+
+.con_wrap_4 li:hover img{
+    transform: scale(1.1);
+
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+}
+
+.in_footer{
+    width: 90%;
+    height: 100px;
+    /* background-color: brown; */
+}
+
+.footer_logo a{
+    color: white;
+}
+.footer_logo{
+    font-size: 28px;
+    font-weight: 800;
+    padding: 20px 0 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.in_footer p{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
